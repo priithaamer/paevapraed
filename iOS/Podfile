@@ -1,0 +1,13 @@
+use_frameworks!
+
+target 'Paevapraed' do
+
+end
+
+target 'PaevapraedTests' do
+  # pod 'Nocilla'
+end
+
+target 'TodayExtension' do
+  pod 'SwiftyJSON', git: 'https://github.com/SwiftyJSON/SwiftyJSON.git', branch: 'xcode7'
+end
