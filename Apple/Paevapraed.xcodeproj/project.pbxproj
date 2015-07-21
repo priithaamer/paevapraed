@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F914A988D23650B9CE05FAB /* Pods_Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3260DAC6B4769DE97AA08B /* Pods_Paevapraed.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		38BC89AD1B5E387500CAD583 /* Paevapraed.h in Headers */ = {isa = PBXBuildFile; fileRef = 38BC89AC1B5E387500CAD583 /* Paevapraed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38BC89B41B5E387500CAD583 /* Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; };
+		38BC89B91B5E387500CAD583 /* PaevapraedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC89B81B5E387500CAD583 /* PaevapraedTests.swift */; };
+		38BC89CA1B5E38A900CAD583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC89C91B5E38A900CAD583 /* AppDelegate.swift */; };
+		38BC89CC1B5E38A900CAD583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC89CB1B5E38A900CAD583 /* ViewController.swift */; };
+		38BC89CF1B5E38A900CAD583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BC89CD1B5E38A900CAD583 /* Main.storyboard */; };
+		38BC89D11B5E38A900CAD583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38BC89D01B5E38A900CAD583 /* Assets.xcassets */; };
+		38BC89D41B5E38A900CAD583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BC89D21B5E38A900CAD583 /* LaunchScreen.storyboard */; };
+		38BC89DF1B5E38A900CAD583 /* Paevapraed_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC89DE1B5E38A900CAD583 /* Paevapraed_iOSTests.swift */; };
+		38BC89EA1B5E38A900CAD583 /* Paevapraed_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC89E91B5E38A900CAD583 /* Paevapraed_iOSUITests.swift */; };
+		38BC89FC1B5E38CF00CAD583 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89FB1B5E38CF00CAD583 /* NotificationCenter.framework */; };
+		38BC89FF1B5E38CF00CAD583 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC89FE1B5E38CF00CAD583 /* TodayViewController.swift */; };
+		38BC8A021B5E38CF00CAD583 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BC8A001B5E38CF00CAD583 /* MainInterface.storyboard */; };
+		38BC8A061B5E38CF00CAD583 /* Paevapraed-iOS-Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 38BC89F91B5E38CF00CAD583 /* Paevapraed-iOS-Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		38BC8A0F1B5E38F400CAD583 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC8A0C1B5E38F400CAD583 /* Offer.swift */; };
+		38BC8A101B5E38F400CAD583 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC8A0D1B5E38F400CAD583 /* Restaurant.swift */; };
+		38BC8A111B5E38F400CAD583 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC8A0E1B5E38F400CAD583 /* Today.swift */; };
+		38BC8A171B5E3D7500CAD583 /* today.json in Resources */ = {isa = PBXBuildFile; fileRef = 38BC8A161B5E3D7500CAD583 /* today.json */; };
+		38BC8A241B5E3F4A00CAD583 /* RestoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC8A231B5E3F4A00CAD583 /* RestoTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38BC89B51B5E387500CAD583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38BC89A01B5E387500CAD583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38BC89A81B5E387500CAD583;
+			remoteInfo = Paevapraed;
+		};
+		38BC89DB1B5E38A900CAD583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38BC89A01B5E387500CAD583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38BC89C61B5E38A900CAD583;
+			remoteInfo = "Paevapraed-iOS";
+		};
+		38BC89E61B5E38A900CAD583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38BC89A01B5E387500CAD583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38BC89C61B5E38A900CAD583;
+			remoteInfo = "Paevapraed-iOS";
+		};
+		38BC8A041B5E38CF00CAD583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38BC89A01B5E387500CAD583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38BC89F81B5E38CF00CAD583;
+			remoteInfo = "Paevapraed-iOS-Today";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38BC8A0A1B5E38CF00CAD583 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				38BC8A061B5E38CF00CAD583 /* Paevapraed-iOS-Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B9EDF7B6AC54CF31DD99083 /* Pods-Paevapraed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paevapraed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paevapraed/Pods-Paevapraed.release.xcconfig"; sourceTree = "<group>"; };
+		38BC89A91B5E387500CAD583 /* Paevapraed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Paevapraed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BC89AC1B5E387500CAD583 /* Paevapraed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paevapraed.h; sourceTree = "<group>"; };
+		38BC89AE1B5E387500CAD583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BC89B31B5E387500CAD583 /* PaevapraedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaevapraedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BC89B81B5E387500CAD583 /* PaevapraedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaevapraedTests.swift; sourceTree = "<group>"; };
+		38BC89BA1B5E387500CAD583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BC89C71B5E38A900CAD583 /* Paevapraed-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paevapraed-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BC89C91B5E38A900CAD583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38BC89CB1B5E38A900CAD583 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38BC89CE1B5E38A900CAD583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38BC89D01B5E38A900CAD583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38BC89D31B5E38A900CAD583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38BC89D51B5E38A900CAD583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BC89DA1B5E38A900CAD583 /* Paevapraed-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paevapraed-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BC89DE1B5E38A900CAD583 /* Paevapraed_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paevapraed_iOSTests.swift; sourceTree = "<group>"; };
+		38BC89E01B5E38A900CAD583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BC89E51B5E38A900CAD583 /* Paevapraed-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paevapraed-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BC89E91B5E38A900CAD583 /* Paevapraed_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paevapraed_iOSUITests.swift; sourceTree = "<group>"; };
+		38BC89EB1B5E38A900CAD583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BC89F91B5E38CF00CAD583 /* Paevapraed-iOS-Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Paevapraed-iOS-Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BC89FB1B5E38CF00CAD583 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		38BC89FE1B5E38CF00CAD583 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		38BC8A011B5E38CF00CAD583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		38BC8A031B5E38CF00CAD583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BC8A0C1B5E38F400CAD583 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		38BC8A0D1B5E38F400CAD583 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		38BC8A0E1B5E38F400CAD583 /* Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		38BC8A161B5E3D7500CAD583 /* today.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = today.json; sourceTree = "<group>"; };
+		38BC8A231B5E3F4A00CAD583 /* RestoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestoTableViewCell.swift; sourceTree = "<group>"; };
+		68B27504796914DA49217C19 /* Pods-Paevapraed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paevapraed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paevapraed/Pods-Paevapraed.debug.xcconfig"; sourceTree = "<group>"; };
+		DE3260DAC6B4769DE97AA08B /* Pods_Paevapraed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paevapraed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38BC89A51B5E387500CAD583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F914A988D23650B9CE05FAB /* Pods_Paevapraed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89B01B5E387500CAD583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC89B41B5E387500CAD583 /* Paevapraed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89C41B5E38A900CAD583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89D71B5E38A900CAD583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89E21B5E38A900CAD583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89F61B5E38CF00CAD583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC89FC1B5E38CF00CAD583 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38BC899F1B5E387500CAD583 = {
+			isa = PBXGroup;
+			children = (
+				38BC89AB1B5E387500CAD583 /* Paevapraed */,
+				38BC89B71B5E387500CAD583 /* PaevapraedTests */,
+				38BC89C81B5E38A900CAD583 /* Paevapraed-iOS */,
+				38BC89DD1B5E38A900CAD583 /* Paevapraed-iOSTests */,
+				38BC89E81B5E38A900CAD583 /* Paevapraed-iOSUITests */,
+				38BC89FD1B5E38CF00CAD583 /* Paevapraed-iOS-Today */,
+				38BC89FA1B5E38CF00CAD583 /* Frameworks */,
+				38BC89AA1B5E387500CAD583 /* Products */,
+				B3FC6B2ECFB76F91EDE0AE6A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		38BC89AA1B5E387500CAD583 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38BC89A91B5E387500CAD583 /* Paevapraed.framework */,
+				38BC89B31B5E387500CAD583 /* PaevapraedTests.xctest */,
+				38BC89C71B5E38A900CAD583 /* Paevapraed-iOS.app */,
+				38BC89DA1B5E38A900CAD583 /* Paevapraed-iOSTests.xctest */,
+				38BC89E51B5E38A900CAD583 /* Paevapraed-iOSUITests.xctest */,
+				38BC89F91B5E38CF00CAD583 /* Paevapraed-iOS-Today.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38BC89AB1B5E387500CAD583 /* Paevapraed */ = {
+			isa = PBXGroup;
+			children = (
+				38BC8A0B1B5E38E000CAD583 /* Models */,
+				38BC89AC1B5E387500CAD583 /* Paevapraed.h */,
+				38BC89AE1B5E387500CAD583 /* Info.plist */,
+			);
+			path = Paevapraed;
+			sourceTree = "<group>";
+		};
+		38BC89B71B5E387500CAD583 /* PaevapraedTests */ = {
+			isa = PBXGroup;
+			children = (
+				38BC8A121B5E3D7500CAD583 /* json */,
+				38BC89B81B5E387500CAD583 /* PaevapraedTests.swift */,
+				38BC89BA1B5E387500CAD583 /* Info.plist */,
+			);
+			path = PaevapraedTests;
+			sourceTree = "<group>";
+		};
+		38BC89C81B5E38A900CAD583 /* Paevapraed-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				38BC8A231B5E3F4A00CAD583 /* RestoTableViewCell.swift */,
+				38BC89C91B5E38A900CAD583 /* AppDelegate.swift */,
+				38BC89CB1B5E38A900CAD583 /* ViewController.swift */,
+				38BC89CD1B5E38A900CAD583 /* Main.storyboard */,
+				38BC89D01B5E38A900CAD583 /* Assets.xcassets */,
+				38BC89D21B5E38A900CAD583 /* LaunchScreen.storyboard */,
+				38BC89D51B5E38A900CAD583 /* Info.plist */,
+			);
+			path = "Paevapraed-iOS";
+			sourceTree = "<group>";
+		};
+		38BC89DD1B5E38A900CAD583 /* Paevapraed-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				38BC89DE1B5E38A900CAD583 /* Paevapraed_iOSTests.swift */,
+				38BC89E01B5E38A900CAD583 /* Info.plist */,
+			);
+			path = "Paevapraed-iOSTests";
+			sourceTree = "<group>";
+		};
+		38BC89E81B5E38A900CAD583 /* Paevapraed-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38BC89E91B5E38A900CAD583 /* Paevapraed_iOSUITests.swift */,
+				38BC89EB1B5E38A900CAD583 /* Info.plist */,
+			);
+			path = "Paevapraed-iOSUITests";
+			sourceTree = "<group>";
+		};
+		38BC89FA1B5E38CF00CAD583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38BC89FB1B5E38CF00CAD583 /* NotificationCenter.framework */,
+				DE3260DAC6B4769DE97AA08B /* Pods_Paevapraed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38BC89FD1B5E38CF00CAD583 /* Paevapraed-iOS-Today */ = {
+			isa = PBXGroup;
+			children = (
+				38BC89FE1B5E38CF00CAD583 /* TodayViewController.swift */,
+				38BC8A001B5E38CF00CAD583 /* MainInterface.storyboard */,
+				38BC8A031B5E38CF00CAD583 /* Info.plist */,
+			);
+			path = "Paevapraed-iOS-Today";
+			sourceTree = "<group>";
+		};
+		38BC8A0B1B5E38E000CAD583 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38BC8A0C1B5E38F400CAD583 /* Offer.swift */,
+				38BC8A0D1B5E38F400CAD583 /* Restaurant.swift */,
+				38BC8A0E1B5E38F400CAD583 /* Today.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		38BC8A121B5E3D7500CAD583 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				38BC8A131B5E3D7500CAD583 /* api */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		38BC8A131B5E3D7500CAD583 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				38BC8A141B5E3D7500CAD583 /* v1 */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		38BC8A141B5E3D7500CAD583 /* v1 */ = {
+			isa = PBXGroup;
+			children = (
+				38BC8A151B5E3D7500CAD583 /* tartu */,
+			);
+			path = v1;
+			sourceTree = "<group>";
+		};
+		38BC8A151B5E3D7500CAD583 /* tartu */ = {
+			isa = PBXGroup;
+			children = (
+				38BC8A161B5E3D7500CAD583 /* today.json */,
+			);
+			path = tartu;
+			sourceTree = "<group>";
+		};
+		B3FC6B2ECFB76F91EDE0AE6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68B27504796914DA49217C19 /* Pods-Paevapraed.debug.xcconfig */,
+				2B9EDF7B6AC54CF31DD99083 /* Pods-Paevapraed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38BC89A61B5E387500CAD583 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC89AD1B5E387500CAD583 /* Paevapraed.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		38BC89A81B5E387500CAD583 /* Paevapraed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BC89BD1B5E387500CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed" */;
+			buildPhases = (
+				6187D1E3D203E10E6BDB500D /* Check Pods Manifest.lock */,
+				38BC89A41B5E387500CAD583 /* Sources */,
+				38BC89A51B5E387500CAD583 /* Frameworks */,
+				38BC89A61B5E387500CAD583 /* Headers */,
+				38BC89A71B5E387500CAD583 /* Resources */,
+				AE549DE5D26A83A1EF140994 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Paevapraed;
+			productName = Paevapraed;
+			productReference = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		38BC89B21B5E387500CAD583 /* PaevapraedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BC89C01B5E387500CAD583 /* Build configuration list for PBXNativeTarget "PaevapraedTests" */;
+			buildPhases = (
+				38BC89AF1B5E387500CAD583 /* Sources */,
+				38BC89B01B5E387500CAD583 /* Frameworks */,
+				38BC89B11B5E387500CAD583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38BC89B61B5E387500CAD583 /* PBXTargetDependency */,
+			);
+			name = PaevapraedTests;
+			productName = PaevapraedTests;
+			productReference = 38BC89B31B5E387500CAD583 /* PaevapraedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		38BC89C61B5E38A900CAD583 /* Paevapraed-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BC89EC1B5E38A900CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOS" */;
+			buildPhases = (
+				38BC89C31B5E38A900CAD583 /* Sources */,
+				38BC89C41B5E38A900CAD583 /* Frameworks */,
+				38BC89C51B5E38A900CAD583 /* Resources */,
+				38BC8A0A1B5E38CF00CAD583 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38BC8A051B5E38CF00CAD583 /* PBXTargetDependency */,
+			);
+			name = "Paevapraed-iOS";
+			productName = "Paevapraed-iOS";
+			productReference = 38BC89C71B5E38A900CAD583 /* Paevapraed-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38BC89D91B5E38A900CAD583 /* Paevapraed-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BC89EF1B5E38A900CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOSTests" */;
+			buildPhases = (
+				38BC89D61B5E38A900CAD583 /* Sources */,
+				38BC89D71B5E38A900CAD583 /* Frameworks */,
+				38BC89D81B5E38A900CAD583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38BC89DC1B5E38A900CAD583 /* PBXTargetDependency */,
+			);
+			name = "Paevapraed-iOSTests";
+			productName = "Paevapraed-iOSTests";
+			productReference = 38BC89DA1B5E38A900CAD583 /* Paevapraed-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		38BC89E41B5E38A900CAD583 /* Paevapraed-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BC89F21B5E38A900CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOSUITests" */;
+			buildPhases = (
+				38BC89E11B5E38A900CAD583 /* Sources */,
+				38BC89E21B5E38A900CAD583 /* Frameworks */,
+				38BC89E31B5E38A900CAD583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38BC89E71B5E38A900CAD583 /* PBXTargetDependency */,
+			);
+			name = "Paevapraed-iOSUITests";
+			productName = "Paevapraed-iOSUITests";
+			productReference = 38BC89E51B5E38A900CAD583 /* Paevapraed-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		38BC89F81B5E38CF00CAD583 /* Paevapraed-iOS-Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BC8A071B5E38CF00CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOS-Today" */;
+			buildPhases = (
+				38BC89F51B5E38CF00CAD583 /* Sources */,
+				38BC89F61B5E38CF00CAD583 /* Frameworks */,
+				38BC89F71B5E38CF00CAD583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paevapraed-iOS-Today";
+			productName = "Paevapraed-iOS-Today";
+			productReference = 38BC89F91B5E38CF00CAD583 /* Paevapraed-iOS-Today.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38BC89A01B5E387500CAD583 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Voog;
+				TargetAttributes = {
+					38BC89A81B5E387500CAD583 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					38BC89B21B5E387500CAD583 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					38BC89C61B5E38A900CAD583 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					38BC89D91B5E38A900CAD583 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 38BC89C61B5E38A900CAD583;
+					};
+					38BC89E41B5E38A900CAD583 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 38BC89C61B5E38A900CAD583;
+					};
+					38BC89F81B5E38CF00CAD583 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 38BC89A31B5E387500CAD583 /* Build configuration list for PBXProject "Paevapraed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38BC899F1B5E387500CAD583;
+			productRefGroup = 38BC89AA1B5E387500CAD583 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38BC89A81B5E387500CAD583 /* Paevapraed */,
+				38BC89B21B5E387500CAD583 /* PaevapraedTests */,
+				38BC89C61B5E38A900CAD583 /* Paevapraed-iOS */,
+				38BC89D91B5E38A900CAD583 /* Paevapraed-iOSTests */,
+				38BC89E41B5E38A900CAD583 /* Paevapraed-iOSUITests */,
+				38BC89F81B5E38CF00CAD583 /* Paevapraed-iOS-Today */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38BC89A71B5E387500CAD583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89B11B5E387500CAD583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC8A171B5E3D7500CAD583 /* today.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89C51B5E38A900CAD583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC89D41B5E38A900CAD583 /* LaunchScreen.storyboard in Resources */,
+				38BC89D11B5E38A900CAD583 /* Assets.xcassets in Resources */,
+				38BC89CF1B5E38A900CAD583 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89D81B5E38A900CAD583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89E31B5E38A900CAD583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89F71B5E38CF00CAD583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC8A021B5E38CF00CAD583 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6187D1E3D203E10E6BDB500D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE549DE5D26A83A1EF140994 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paevapraed/Pods-Paevapraed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38BC89A41B5E387500CAD583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC8A101B5E38F400CAD583 /* Restaurant.swift in Sources */,
+				38BC8A111B5E38F400CAD583 /* Today.swift in Sources */,
+				38BC8A0F1B5E38F400CAD583 /* Offer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89AF1B5E387500CAD583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC89B91B5E387500CAD583 /* PaevapraedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89C31B5E38A900CAD583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC8A241B5E3F4A00CAD583 /* RestoTableViewCell.swift in Sources */,
+				38BC89CC1B5E38A900CAD583 /* ViewController.swift in Sources */,
+				38BC89CA1B5E38A900CAD583 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89D61B5E38A900CAD583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC89DF1B5E38A900CAD583 /* Paevapraed_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89E11B5E38A900CAD583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC89EA1B5E38A900CAD583 /* Paevapraed_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC89F51B5E38CF00CAD583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC89FF1B5E38CF00CAD583 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38BC89B61B5E387500CAD583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38BC89A81B5E387500CAD583 /* Paevapraed */;
+			targetProxy = 38BC89B51B5E387500CAD583 /* PBXContainerItemProxy */;
+		};
+		38BC89DC1B5E38A900CAD583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38BC89C61B5E38A900CAD583 /* Paevapraed-iOS */;
+			targetProxy = 38BC89DB1B5E38A900CAD583 /* PBXContainerItemProxy */;
+		};
+		38BC89E71B5E38A900CAD583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38BC89C61B5E38A900CAD583 /* Paevapraed-iOS */;
+			targetProxy = 38BC89E61B5E38A900CAD583 /* PBXContainerItemProxy */;
+		};
+		38BC8A051B5E38CF00CAD583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38BC89F81B5E38CF00CAD583 /* Paevapraed-iOS-Today */;
+			targetProxy = 38BC8A041B5E38CF00CAD583 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38BC89CD1B5E38A900CAD583 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38BC89CE1B5E38A900CAD583 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38BC89D21B5E38A900CAD583 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38BC89D31B5E38A900CAD583 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		38BC8A001B5E38CF00CAD583 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38BC8A011B5E38CF00CAD583 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38BC89BB1B5E387500CAD583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38BC89BC1B5E387500CAD583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38BC89BE1B5E387500CAD583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B27504796914DA49217C19 /* Pods-Paevapraed.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Paevapraed/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voog.Paevapraed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38BC89BF1B5E387500CAD583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9EDF7B6AC54CF31DD99083 /* Pods-Paevapraed.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Paevapraed/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voog.Paevapraed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		38BC89C11B5E387500CAD583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PaevapraedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voog.PaevapraedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38BC89C21B5E387500CAD583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PaevapraedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voog.PaevapraedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38BC89ED1B5E38A900CAD583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Paevapraed-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voog.Paevapraed-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38BC89EE1B5E38A900CAD583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Paevapraed-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voog.Paevapraed-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38BC89F01B5E38A900CAD583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Paevapraed-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voog.Paevapraed-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paevapraed-iOS.app/Paevapraed-iOS";
+			};
+			name = Debug;
+		};
+		38BC89F11B5E38A900CAD583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Paevapraed-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voog.Paevapraed-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paevapraed-iOS.app/Paevapraed-iOS";
+			};
+			name = Release;
+		};
+		38BC89F31B5E38A900CAD583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Paevapraed-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voog.Paevapraed-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Paevapraed-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		38BC89F41B5E38A900CAD583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Paevapraed-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voog.Paevapraed-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Paevapraed-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		38BC8A081B5E38CF00CAD583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Paevapraed-iOS-Today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voog.Paevapraed-iOS.Paevapraed-iOS-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		38BC8A091B5E38CF00CAD583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Paevapraed-iOS-Today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voog.Paevapraed-iOS.Paevapraed-iOS-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38BC89A31B5E387500CAD583 /* Build configuration list for PBXProject "Paevapraed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BC89BB1B5E387500CAD583 /* Debug */,
+				38BC89BC1B5E387500CAD583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38BC89BD1B5E387500CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BC89BE1B5E387500CAD583 /* Debug */,
+				38BC89BF1B5E387500CAD583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38BC89C01B5E387500CAD583 /* Build configuration list for PBXNativeTarget "PaevapraedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BC89C11B5E387500CAD583 /* Debug */,
+				38BC89C21B5E387500CAD583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38BC89EC1B5E38A900CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BC89ED1B5E38A900CAD583 /* Debug */,
+				38BC89EE1B5E38A900CAD583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38BC89EF1B5E38A900CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BC89F01B5E38A900CAD583 /* Debug */,
+				38BC89F11B5E38A900CAD583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38BC89F21B5E38A900CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BC89F31B5E38A900CAD583 /* Debug */,
+				38BC89F41B5E38A900CAD583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38BC8A071B5E38CF00CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOS-Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BC8A081B5E38CF00CAD583 /* Debug */,
+				38BC8A091B5E38CF00CAD583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38BC89A01B5E387500CAD583 /* Project object */;
+}
