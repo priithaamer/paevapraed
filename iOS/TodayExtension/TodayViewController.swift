@@ -58,17 +58,15 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        NSLog("Cell row at index path")
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! RestaurantView
         
         cell.nameLabel?.text = "\(self.restaurants[indexPath.row].name)"
         
-//        for i in 1...3 {
-//            let label = UILabel()
-//            label.text = "\(self.restaurants[indexPath.row].name) - \(i)"
-//            cell.offersStack.addArrangedSubview(label)
-//        }
+        for i in 1...3 {
+            let label = UILabel()
+            label.text = "\(self.restaurants[indexPath.row].name) - \(i)"
+            cell.offersStack.addArrangedSubview(label)
+        }
         
         return cell
     }

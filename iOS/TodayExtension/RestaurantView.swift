@@ -13,6 +13,8 @@ import UIKit
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var offersStack: UIStackView!
+    
     func viewDidLoad() {
         print("view did load")
     }

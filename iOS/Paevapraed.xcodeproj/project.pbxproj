@@ -24,7 +24,7 @@
 		389FC4491B563DA9001D6F9B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389FC4481B563DA9001D6F9B /* Restaurant.swift */; };
 		389FC44B1B563EFF001D6F9B /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389FC44A1B563EFF001D6F9B /* Offer.swift */; };
 		389FC44D1B5663BC001D6F9B /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389FC44C1B5663BC001D6F9B /* RestaurantView.swift */; };
-		8B49FD7198121A42A24D43A6 /* Pods_TodayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F10F7CA1E7515DFFD4782CB /* Pods_TodayExtension.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8B49FD7198121A42A24D43A6 /* Pods_TodayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F10F7CA1E7515DFFD4782CB /* Pods_TodayExtension.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +344,7 @@
 					};
 					381279651B11CC73003C8264 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = EBH4ESN349;
 					};
 				};
 			};
@@ -652,6 +653,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06867233EA23F1D95C210733 /* Pods-TodayExtension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -661,6 +664,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.priithaamer.Paevapraed.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -669,11 +673,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43AFBA732183C3CBD0F44D21 /* Pods-TodayExtension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.priithaamer.Paevapraed.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
