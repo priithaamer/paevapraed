@@ -1,19 +1,32 @@
 //
 //  TodayViewController.swift
-//  Paevapraed-iOS-Today
+//  TodayExtension
 //
-//  Created by Priit Haamer on 21.07.15.
-//  Copyright © 2015 Voog. All rights reserved.
+//  Created by Priit Haamer on 24.05.15.
+//  Copyright (c) 2015 Priit Haamer. All rights reserved.
 //
+
+// https://blog.fynydd.com/tips-for-building-an-ios-notification-center-today-extension/ Palju kasulikke nippe widgeti tegemisel
 
 import UIKit
 import NotificationCenter
+import Paevapraed
 
-class TodayViewController: UIViewController, NCWidgetProviding {
-        
+class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDelegate, UITableViewDataSource {
+    
+    var restaurants = [Restaurant]()
+    
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSLog("today view did load")
+        
         // Do any additional setup after loading the view from its nib.
+        
+//        self.tableView!.estimatedRowHeight = 30
+//        self.tableView!.rowHeight = UITableViewAutomaticDimension
     }
     
     override func didReceiveMemoryWarning() {
@@ -21,14 +34,41 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-
-        completionHandler(NCUpdateResult.NewData)
+    //    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> (UIEdgeInsets) {
+    //            return UIEdgeInsetsZero
+    //    }
+    
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: (NCUpdateResult) -> Void) {
+        NSLog("widget perform update")
+        
+        Today.fetch() {
+            
+            self.restaurants = $0.restaurants
+            
+//            self.tableView!.reloadData()
+//            self.preferredContentSize = self.tableView!.contentSize
+            
+            completionHandler(.NewData)
+        }
     }
     
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.restaurants.count;
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! RestaurantView
+        
+        cell.nameLabel?.text = "\(self.restaurants[indexPath.row].name)"
+        
+        for i in 1...3 {
+            let label = UILabel()
+            label.text = "\(self.restaurants[indexPath.row].name) - \(i)"
+            cell.offersStack.addArrangedSubview(label)
+        }
+        
+        return cell
+    }
 }

@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Paevapraed
 
 class ViewController: UITableViewController {
     
-    var objects = ["Foo", "Bar"]
+    var restaurants = [Restaurant]()
     
     @IBOutlet var table: UITableView!
     
@@ -20,6 +21,12 @@ class ViewController: UITableViewController {
         
         self.table.estimatedRowHeight = 30
         self.table.rowHeight = UITableViewAutomaticDimension
+        
+        Today.fetch {
+            self.restaurants = $0.restaurants
+            
+            self.table.reloadData()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,17 +53,19 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return self.restaurants.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RestoCell", forIndexPath: indexPath) as! RestoTableViewCell
         
-        cell.nimiLabel!.text = objects[indexPath.row]
+        let restaurant = self.restaurants[indexPath.row]
         
-        for i in 1...3 {
+        cell.nimiLabel!.text = restaurant.name
+        
+        for offer in restaurant.offers {
             let label = UILabel()
-            label.text = "\(objects[indexPath.row]) - \(i)"
+            label.text = offer.name
             
             cell.offersStack.addArrangedSubview(label)
         }

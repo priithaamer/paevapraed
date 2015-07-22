@@ -27,6 +27,9 @@
 		38BC8A111B5E38F400CAD583 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC8A0E1B5E38F400CAD583 /* Today.swift */; };
 		38BC8A171B5E3D7500CAD583 /* today.json in Resources */ = {isa = PBXBuildFile; fileRef = 38BC8A161B5E3D7500CAD583 /* today.json */; };
 		38BC8A241B5E3F4A00CAD583 /* RestoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC8A231B5E3F4A00CAD583 /* RestoTableViewCell.swift */; };
+		38EE5FB61B5F737C00FB9ED4 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE5FB51B5F737C00FB9ED4 /* RestaurantView.swift */; };
+		38EE5FB71B5F73B600FB9ED4 /* Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; };
+		38EE5FB81B5F73C400FB9ED4 /* Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,7 @@
 		38BC8A0E1B5E38F400CAD583 /* Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
 		38BC8A161B5E3D7500CAD583 /* today.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = today.json; sourceTree = "<group>"; };
 		38BC8A231B5E3F4A00CAD583 /* RestoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestoTableViewCell.swift; sourceTree = "<group>"; };
+		38EE5FB51B5F737C00FB9ED4 /* RestaurantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		68B27504796914DA49217C19 /* Pods-Paevapraed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paevapraed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paevapraed/Pods-Paevapraed.debug.xcconfig"; sourceTree = "<group>"; };
 		DE3260DAC6B4769DE97AA08B /* Pods_Paevapraed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paevapraed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38EE5FB81B5F73C400FB9ED4 /* Paevapraed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38EE5FB71B5F73B600FB9ED4 /* Paevapraed.framework in Frameworks */,
 				38BC89FC1B5E38CF00CAD583 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +259,7 @@
 				38BC89FE1B5E38CF00CAD583 /* TodayViewController.swift */,
 				38BC8A001B5E38CF00CAD583 /* MainInterface.storyboard */,
 				38BC8A031B5E38CF00CAD583 /* Info.plist */,
+				38EE5FB51B5F737C00FB9ED4 /* RestaurantView.swift */,
 			);
 			path = "Paevapraed-iOS-Today";
 			sourceTree = "<group>";
@@ -620,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38BC89FF1B5E38CF00CAD583 /* TodayViewController.swift in Sources */,
+				38EE5FB61B5F737C00FB9ED4 /* RestaurantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

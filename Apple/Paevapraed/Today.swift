@@ -43,7 +43,7 @@ public class Today {
             }
         }
         
-        task!.resume()
+        task.resume()
         
     }
     
