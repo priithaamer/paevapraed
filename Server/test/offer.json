@@ -1,0 +1,17 @@
+{
+  "date": "2015-07-23",
+  "city_code": "tartu",
+  "country_code": "ee",
+  "currency": "EUR",
+  "restaurant_code": "polpo",
+  "offers": [
+    {
+      "name": "Polpo selge küülikusupp",
+      "price": 3
+    },
+    {
+      "name": "Vürtsikas grillitud seafilee praekartuliga",
+      "price": 5.5
+    }
+  ]
+}
