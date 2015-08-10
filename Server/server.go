@@ -39,10 +39,11 @@ func findCityByCode(code string) (*City, error) {
 }
 
 type Restaurant struct {
-  Id int `db:"id"`
-  Name string `db:"name"`
-  Code string `db:"code"`
-  CityId int `db:"city_id"`
+  Id int `db:"id" json:"-"`
+  Name string `db:"name" json:"name"`
+  Code string `db:"code" json:"code"`
+  CityId int `db:"city_id" json:"-"`
+  Offers []Offer `db:"-" json:"offers"`
 }
 
 func findRestaurantByCode(code string) (*Restaurant, error) {
@@ -65,12 +66,12 @@ type OfferImport struct {
 }
 
 type Offer struct {
-  Id int64 `json:"-"`
-  Name string `json:"name"`
-  Description string `json:"description"`
-  Price float64 `json:"price"`
-  OfferDate time.Time `json:"-"`
-  RestaurantId int `json:"-"`
+  Id int64 `db:"id" json:"-"`
+  Name string `db:"name" json:"name"`
+  Description string `db:"description" json:"description"`
+  Price float64 `db:"price" json:"price"`
+  OfferDate time.Time `db:"offer_date" json:"-"`
+  RestaurantId int `db:"restaurant_id" json:"-"`
 }
 
 func (o *Offer) create() (int64, error) {
@@ -96,10 +97,10 @@ func (o *Offer) create() (int64, error) {
 func findOfferByDateAndRestaurant(date time.Time, restaurant_id int) (*Offer, error) {
   var o Offer
   
-  err := db.QueryRow("SELECT id, offer_date, restaurant_id, name, description, price FROM offers WHERE restaurant_id = ? AND offer_date = ?", restaurant_id, date).Scan(&o.Id, &o.OfferDate, &o.RestaurantId, &o.Name, &o.Description, &o.Price)
+  err := dbmap.SelectOne(&o, "SELECT id, offer_date, restaurant_id, name, description, price FROM offers WHERE restaurant_id = ? AND offer_date = ?", restaurant_id, date)
   
 	if err != nil {
-    return &Offer{}, err
+    return nil, err
 	} else {
     return &o, nil
   }
@@ -128,6 +129,8 @@ func createOffer(w http.ResponseWriter, r *http.Request) {
   var offer, _ = findOfferByDateAndRestaurant(import_date, restaurant.Id)
   
   if offer == nil {
+    fmt.Println(fmt.Sprintf("Creating offer for %s on date %s\n", restaurant.Name, import_date))
+    
     for i := range oi.Offers {
       var o = oi.Offers[i]
       
@@ -146,7 +149,7 @@ func createOffer(w http.ResponseWriter, r *http.Request) {
 func initDb() *gorp.DbMap {
   // connect to db using standard Go database/sql API
   // use whatever database/sql driver you wish
-  db, err := sql.Open("mysql", "root@/paevapraed_development")
+  db, err := sql.Open("mysql", config.Database)
   checkErr(err, "sql.Open failed")
 
   // construct a gorp DbMap

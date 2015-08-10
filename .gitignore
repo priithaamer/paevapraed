@@ -28,3 +28,5 @@ DerivedData
  
 # CocoaPods
 Pods
+Server/Server
+Server/gin-bin
