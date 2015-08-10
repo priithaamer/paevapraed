@@ -4,6 +4,10 @@ target 'Paevapraed' do
   pod 'SwiftyJSON', git: 'https://github.com/SwiftyJSON/SwiftyJSON.git', branch: 'xcode7'
 end
 
+target 'Paevapraed-iOS' do
+  pod 'SwiftyJSON', git: 'https://github.com/SwiftyJSON/SwiftyJSON.git', branch: 'xcode7'
+end
+
 # target 'PaevapraedTests' do
 #   # pod 'Nocilla'
 # end

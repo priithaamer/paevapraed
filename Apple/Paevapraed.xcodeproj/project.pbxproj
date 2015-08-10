@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F914A988D23650B9CE05FAB /* Pods_Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3260DAC6B4769DE97AA08B /* Pods_Paevapraed.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		38BC89AD1B5E387500CAD583 /* Paevapraed.h in Headers */ = {isa = PBXBuildFile; fileRef = 38BC89AC1B5E387500CAD583 /* Paevapraed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38BC89B41B5E387500CAD583 /* Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; };
 		38BC89B91B5E387500CAD583 /* PaevapraedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC89B81B5E387500CAD583 /* PaevapraedTests.swift */; };
@@ -27,9 +26,12 @@
 		38BC8A111B5E38F400CAD583 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC8A0E1B5E38F400CAD583 /* Today.swift */; };
 		38BC8A171B5E3D7500CAD583 /* today.json in Resources */ = {isa = PBXBuildFile; fileRef = 38BC8A161B5E3D7500CAD583 /* today.json */; };
 		38BC8A241B5E3F4A00CAD583 /* RestoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC8A231B5E3F4A00CAD583 /* RestoTableViewCell.swift */; };
+		38CA23A31B775D3000A61DA9 /* Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; };
+		38CA23A41B775D3000A61DA9 /* Paevapraed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38CA23AC1B775E3700A61DA9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA23AB1B775E3700A61DA9 /* SwiftyJSON.framework */; };
 		38EE5FB61B5F737C00FB9ED4 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE5FB51B5F737C00FB9ED4 /* RestaurantView.swift */; };
 		38EE5FB71B5F73B600FB9ED4 /* Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; };
-		38EE5FB81B5F73C400FB9ED4 /* Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; };
+		9F7AD344E1E88D8E6F934CB8 /* Pods_Paevapraed_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1A24CC4010A772E255DBA4 /* Pods_Paevapraed_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,13 @@
 			remoteGlobalIDString = 38BC89F81B5E38CF00CAD583;
 			remoteInfo = "Paevapraed-iOS-Today";
 		};
+		38CA23A11B775CCF00A61DA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38BC89A01B5E387500CAD583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38BC89A81B5E387500CAD583;
+			remoteInfo = Paevapraed;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,9 +84,21 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38CA23A51B775D3000A61DA9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38CA23A41B775D3000A61DA9 /* Paevapraed.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13873E7F36C46AE2F6175D3C /* Pods-Paevapraed-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paevapraed-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paevapraed-iOS/Pods-Paevapraed-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2B9EDF7B6AC54CF31DD99083 /* Pods-Paevapraed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paevapraed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paevapraed/Pods-Paevapraed.release.xcconfig"; sourceTree = "<group>"; };
 		38BC89A91B5E387500CAD583 /* Paevapraed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Paevapraed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BC89AC1B5E387500CAD583 /* Paevapraed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paevapraed.h; sourceTree = "<group>"; };
@@ -108,9 +129,14 @@
 		38BC8A0E1B5E38F400CAD583 /* Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
 		38BC8A161B5E3D7500CAD583 /* today.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = today.json; sourceTree = "<group>"; };
 		38BC8A231B5E3F4A00CAD583 /* RestoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestoTableViewCell.swift; sourceTree = "<group>"; };
+		38CA23A61B775D7A00A61DA9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		38CA23A91B775DD200A61DA9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		38CA23AB1B775E3700A61DA9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		38EE5FB51B5F737C00FB9ED4 /* RestaurantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		68B27504796914DA49217C19 /* Pods-Paevapraed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paevapraed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paevapraed/Pods-Paevapraed.debug.xcconfig"; sourceTree = "<group>"; };
+		CB1A24CC4010A772E255DBA4 /* Pods_Paevapraed_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paevapraed_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3260DAC6B4769DE97AA08B /* Pods_Paevapraed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paevapraed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51FB98A36F409F8F6128C77 /* Pods-Paevapraed-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paevapraed-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paevapraed-iOS/Pods-Paevapraed-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F914A988D23650B9CE05FAB /* Pods_Paevapraed.framework in Frameworks */,
+				38CA23AC1B775E3700A61DA9 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +160,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38EE5FB81B5F73C400FB9ED4 /* Paevapraed.framework in Frameworks */,
+				38CA23A31B775D3000A61DA9 /* Paevapraed.framework in Frameworks */,
+				9F7AD344E1E88D8E6F934CB8 /* Pods_Paevapraed_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +274,12 @@
 		38BC89FA1B5E38CF00CAD583 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38CA23AB1B775E3700A61DA9 /* SwiftyJSON.framework */,
+				38CA23A91B775DD200A61DA9 /* SwiftyJSON.framework */,
+				38CA23A61B775D7A00A61DA9 /* SwiftyJSON.framework */,
 				38BC89FB1B5E38CF00CAD583 /* NotificationCenter.framework */,
 				DE3260DAC6B4769DE97AA08B /* Pods_Paevapraed.framework */,
+				CB1A24CC4010A772E255DBA4 /* Pods_Paevapraed_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,6 +342,8 @@
 			children = (
 				68B27504796914DA49217C19 /* Pods-Paevapraed.debug.xcconfig */,
 				2B9EDF7B6AC54CF31DD99083 /* Pods-Paevapraed.release.xcconfig */,
+				13873E7F36C46AE2F6175D3C /* Pods-Paevapraed-iOS.debug.xcconfig */,
+				E51FB98A36F409F8F6128C77 /* Pods-Paevapraed-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -371,14 +404,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38BC89EC1B5E38A900CAD583 /* Build configuration list for PBXNativeTarget "Paevapraed-iOS" */;
 			buildPhases = (
+				78FE6CC841576542E218CFEA /* Check Pods Manifest.lock */,
 				38BC89C31B5E38A900CAD583 /* Sources */,
 				38BC89C41B5E38A900CAD583 /* Frameworks */,
 				38BC89C51B5E38A900CAD583 /* Resources */,
 				38BC8A0A1B5E38CF00CAD583 /* Embed App Extensions */,
+				38CA23A51B775D3000A61DA9 /* Embed Frameworks */,
+				0C4172BD0DD04C26BCCEC93F /* Embed Pods Frameworks */,
+				13E658E2B075492AD6DEB31C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				38CA23A21B775CCF00A61DA9 /* PBXTargetDependency */,
 				38BC8A051B5E38CF00CAD583 /* PBXTargetDependency */,
 			);
 			name = "Paevapraed-iOS";
@@ -545,7 +583,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C4172BD0DD04C26BCCEC93F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paevapraed-iOS/Pods-Paevapraed-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13E658E2B075492AD6DEB31C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paevapraed-iOS/Pods-Paevapraed-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6187D1E3D203E10E6BDB500D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78FE6CC841576542E218CFEA /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -653,6 +736,11 @@
 			isa = PBXTargetDependency;
 			target = 38BC89F81B5E38CF00CAD583 /* Paevapraed-iOS-Today */;
 			targetProxy = 38BC8A041B5E38CF00CAD583 /* PBXContainerItemProxy */;
+		};
+		38CA23A21B775CCF00A61DA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38BC89A81B5E387500CAD583 /* Paevapraed */;
+			targetProxy = 38CA23A11B775CCF00A61DA9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -782,6 +870,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Paevapraed/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -801,6 +893,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Paevapraed/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -832,9 +928,14 @@
 		};
 		38BC89ED1B5E38A900CAD583 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13873E7F36C46AE2F6175D3C /* Pods-Paevapraed-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Paevapraed-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -845,9 +946,14 @@
 		};
 		38BC89EE1B5E38A900CAD583 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E51FB98A36F409F8F6128C77 /* Pods-Paevapraed-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Paevapraed-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

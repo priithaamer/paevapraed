@@ -13,19 +13,17 @@ class ViewController: UITableViewController {
     
     var restaurants = [Restaurant]()
     
-    @IBOutlet var table: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.table.estimatedRowHeight = 30
-        self.table.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 30
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         Today.fetch {
             self.restaurants = $0.restaurants
             
-            self.table.reloadData()
+            self.tableView.reloadData()
         }
     }
     
@@ -49,6 +47,7 @@ class ViewController: UITableViewController {
     // MARK: - Table View
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        NSLog("Number of rows in section")
         return 1
     }
     
@@ -57,6 +56,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("RestoCell", forIndexPath: indexPath) as! RestoTableViewCell
         
         let restaurant = self.restaurants[indexPath.row]
@@ -79,7 +79,7 @@ class ViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        return true
+        return false
     }
     
 }

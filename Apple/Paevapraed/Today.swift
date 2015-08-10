@@ -25,7 +25,7 @@ public class Today {
         
         NSLog("Today.fetch")
         
-        let url = "http://imac.local:9090/api/v1/tartu/today.json"
+        let url = "http://voog.construction:3000/api/v1/tartu/today"
         
         let request = NSMutableURLRequest(URL: NSURL(string: url)!)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
