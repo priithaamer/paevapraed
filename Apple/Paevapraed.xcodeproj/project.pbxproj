@@ -32,6 +32,7 @@
 		38EE5FB61B5F737C00FB9ED4 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE5FB51B5F737C00FB9ED4 /* RestaurantView.swift */; };
 		38EE5FB71B5F73B600FB9ED4 /* Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC89A91B5E387500CAD583 /* Paevapraed.framework */; };
 		9F7AD344E1E88D8E6F934CB8 /* Pods_Paevapraed_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1A24CC4010A772E255DBA4 /* Pods_Paevapraed_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DE56F6E4B4E3ADA7FB004FA9 /* Pods_Paevapraed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3260DAC6B4769DE97AA08B /* Pods_Paevapraed.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CA23AC1B775E3700A61DA9 /* SwiftyJSON.framework in Frameworks */,
+				DE56F6E4B4E3ADA7FB004FA9 /* Pods_Paevapraed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -47,7 +47,6 @@ class ViewController: UITableViewController {
     // MARK: - Table View
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        NSLog("Number of rows in section")
         return 1
     }
     

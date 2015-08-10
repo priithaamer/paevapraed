@@ -32,7 +32,12 @@ public class Today {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("Paevapraed Today Extension", forHTTPHeaderField: "User-Agent")
         
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
+        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: configuration, delegate:nil, delegateQueue: NSOperationQueue.mainQueue())
+
+        let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+        
+            NSLog("NSURLSession.dataTashWithRequest completion block on Main Thread: \(NSThread.currentThread().isMainThread)")
             
             if (error != nil) {
                 NSLog("NSURLSESSION ERROR ERROR")
