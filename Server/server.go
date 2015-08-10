@@ -7,6 +7,7 @@ import (
   "time"
   
   // "bytes"
+  "flag"
   "fmt"
   "log"
   "database/sql"
@@ -171,14 +172,35 @@ func checkErr(err error, msg string) {
   }
 }
 
+type Configuration struct {
+	Host        string
+	Port        string
+  Database    string
+	Logfile     string
+}
+
+var config = Configuration{}
+
+func init() {
+  if config.Port = os.Getenv("PORT"); config.Port == "" {
+		flag.StringVar(&config.Port, "port", "8000", "HTTP Port")
+	}
+  if config.Host = os.Getenv("HOST"); config.Host == "" {
+    flag.StringVar(&config.Host, "host", "", "HTTP Hostname")
+  }
+  if config.Database = os.Getenv("DB"); config.Database == "" {
+    flag.StringVar(&config.Database, "db", "", "Database URL")
+  }
+  flag.Parse()
+}
+
 func main() {
-  
   dbm := initDb()
   dbmap = dbm
   defer dbm.Db.Close()
   
   // TODO: Take database settings from configuration
-  conn, err := sql.Open("mysql", "root@/paevapraed_development")
+  conn, err := sql.Open("mysql", config.Database)
 
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
@@ -196,7 +218,7 @@ func main() {
   router.HandleFunc("/api/v1/offers", createOffer).Methods("POST")
   router.HandleFunc("/api/v1/{city:.*}/today", todaysOffers).Methods("GET")
   
-  if err := http.ListenAndServe(":9000", router); err != nil {
+  if err := http.ListenAndServe(fmt.Sprintf("%s:%s", config.Host, config.Port), router); err != nil {
     panic(err.Error())
   }
 }
