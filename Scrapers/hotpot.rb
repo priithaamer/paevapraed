@@ -79,17 +79,14 @@ content.children.each do |item|
 end
 
 data.values.each do |day|
-  puts '-----------------'
-  puts day.to_json
+  uri = URI('http://voog.construction:3000/api/v1/offers')
+  req = Net::HTTP::Post.new(uri)
+  req.body = day.to_json
   
-  # uri = URI('http://voog.construction:3000/api/v1/offers')
-  # req = Net::HTTP::Post.new(uri)
-  # req.body = day.to_json
-  # 
-  # res = Net::HTTP.start(uri.hostname, uri.port) do |http|
-  #   http.request(req)
-  # end
+  res = Net::HTTP.start(uri.hostname, uri.port) do |http|
+    http.request(req)
+  end
 
-  # puts res.code
-  # puts res.body
+  puts res.code
+  puts res.body
 end
