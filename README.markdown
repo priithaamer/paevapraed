@@ -98,23 +98,31 @@ Sama mis Today, ainult valitud päeva info. 404 kui päeva infot ei ole.
 
 `POST /api/v1/offers`
 
-    {
-      "date": "2015-07-22",
-      "city_code": "tartu",
-      "country_code": "ee",
-      "currency": "EUR",
-      "restaurant_code": "polpo",
-      "offers": [
-        {
-          "name": "Polpo selge küülikusupp",
-          "price": 3
-        },
-        {
-          "name": "Vürtsikas grillitud seafilee praekartuliga",
-          "price": 5.5
-        }
-      ]
-    }
+    [
+      {
+        "date": "2015-07-22",
+        "city_code": "tartu",
+        "country_code": "ee",
+        "currency": "EUR",
+        "restaurant_code": "polpo",
+        "offers": [
+          {
+            "name": "Polpo selge küülikusupp",
+            "price": 3
+          },
+          {
+            "name": "Vürtsikas grillitud seafilee praekartuliga",
+            "price": 5.5
+          }
+        ]
+      }
+    ]
+
+## Go server
+
+Run in development with
+
+    $ DB=root@/paevapraed_development?parseTime=true gin
 
 ## API testserver
 
