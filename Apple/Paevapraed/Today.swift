@@ -36,9 +36,6 @@ public class Today {
         let session = NSURLSession(configuration: configuration, delegate:nil, delegateQueue: NSOperationQueue.mainQueue())
 
         let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
-        
-            NSLog("NSURLSession.dataTashWithRequest completion block on Main Thread: \(NSThread.currentThread().isMainThread)")
-            
             if (error != nil) {
                 NSLog("NSURLSESSION ERROR ERROR")
                 // TODO: Handle error

@@ -25,8 +25,8 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
         
         // Do any additional setup after loading the view from its nib.
         
-//        self.tableView!.estimatedRowHeight = 30
-//        self.tableView!.rowHeight = UITableViewAutomaticDimension
+        self.tableView!.estimatedRowHeight = 30
+        self.tableView!.rowHeight = UITableViewAutomaticDimension
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,7 +45,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
             
             self.restaurants = $0.restaurants
             
-//            self.tableView!.reloadData()
+            self.tableView!.reloadData()
 //            self.preferredContentSize = self.tableView!.contentSize
             
             completionHandler(.NewData)
@@ -58,17 +58,23 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! RestaurantView
+        let restaurant = self.restaurants[indexPath.row]
         
-        cell.nameLabel?.text = "\(self.restaurants[indexPath.row].name)"
+        cell.nameLabel.text = restaurant.name
         
-        for i in 1...3 {
+        for offer in restaurant.offers {
             let label = UILabel()
-            label.text = "\(self.restaurants[indexPath.row].name) - \(i)"
+            label.textColor = UIColor.whiteColor()
+            label.text = offer.name
+            
             cell.offersStack.addArrangedSubview(label)
         }
         
         return cell
     }
+    
+//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        return UITableViewAutomaticDimension
+//    }
 }

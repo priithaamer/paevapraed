@@ -16,13 +16,6 @@ import UIKit
     @IBOutlet weak var offersStack: UIStackView!
     
     func viewDidLoad() {
-        print("view did load")
-    }
-    
-    
-    override func prepareForInterfaceBuilder() {
-        self.nameLabel?.text = "Polpo"
-        self.nameLabel?.textColor = UIColor.blackColor()
-        
+        print("RestaurantView did load")
     }
 }
