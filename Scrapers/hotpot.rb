@@ -3,6 +3,7 @@ require 'nokogiri'
 require 'date'
 require 'uri'
 require 'net/http'
+require 'open-uri'
 
 MonthNames = {
   jaanuar: 1, veebruar: 2, märts: 3, aprill: 4, mai: 5, juuni: 6,
@@ -27,9 +28,7 @@ def parse_hotpot_date(datestr)
   DateTime.strptime(datestr, '%d.%m.%Y')
 end
 
-file = File.open(File.join(File.dirname(__FILE__), 'spec', 'fixtures', 'hotpot.html'))
-
-doc = Nokogiri::HTML(file)
+doc = Nokogiri::HTML(open('http://hotpot.ee/menuu/paevapakkumine/'))
 
 content = doc.css('#main .width-container')
 
@@ -78,15 +77,4 @@ content.children.each do |item|
   end
 end
 
-data.values.each do |day|
-  uri = URI('http://voog.construction:3000/api/v1/offers')
-  req = Net::HTTP::Post.new(uri)
-  req.body = day.to_json
-  
-  res = Net::HTTP.start(uri.hostname, uri.port) do |http|
-    http.request(req)
-  end
-
-  puts res.code
-  puts res.body
-end
+puts data.values.to_json
