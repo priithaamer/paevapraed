@@ -66,7 +66,8 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
         for offer in restaurant.offers {
             let label = UILabel()
             label.textColor = UIColor.whiteColor()
-            label.text = offer.name
+            label.text = "\(offer.name) \(offer.price)€"
+            label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption2)
             
             cell.offersStack.addArrangedSubview(label)
         }
